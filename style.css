@@ -275,7 +275,7 @@ footer p{
     gap: 4px;
   }
   .projects .tools li{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     
   }
   .projects .tools li i{
@@ -325,9 +325,13 @@ footer p{
     font-size: 2.5rem;
     margin-top: 3rem;
   }
+  .projects .tools li{
+    font-size: 2rem;
+    
+  }
   .JQuery svg{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
   .info{
     padding: 4rem;
