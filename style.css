@@ -267,12 +267,12 @@ footer p{
     max-width: 390px;
   }
   .tools{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 130px 1fr;
     gap: 10px;
   }
   .projects .tools{
     grid-template-columns: 135px 135px;
-    gap: 8px;
+    gap: 4px;
   }
   .projects .fa-arrow-up-right-from-square{
     font-size: 2.5rem;
