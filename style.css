@@ -308,7 +308,7 @@ footer p{
     font-size: 2rem;
   }
   .tools{
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
   .tools li{
