@@ -95,6 +95,9 @@ ul > a{
   margin-right: 1rem;
   
 }
+.social > a:hover{
+  color:#E2F266;
+}
 .about{
   text-align: center;
   margin-top: 2rem;
@@ -271,7 +274,7 @@ footer p{
     gap: 10px;
   }
   .projects .tools{
-    grid-template-columns: 135px 135px;
+    grid-template-columns: 125px 135px;
     gap: 4px;
   }
   .projects .fa-arrow-up-right-from-square{
@@ -280,7 +283,7 @@ footer p{
     left: 102%;
   }
   .projects .tools li i{
-    margin-right: 0.3rem;
+    margin-right: 0.2rem;
   }
 }
 @media(min-width: 625px){
