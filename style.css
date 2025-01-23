@@ -241,6 +241,48 @@ footer p{
   font-weight: 600;
 }
 
+@media(min-width: 320px){
+  .container{
+    max-width: 320px;
+  }
+  .tools{
+    grid-template-columns: 110px 1fr;
+    gap: 5px;
+  }
+  .projects .tools{
+    grid-template-columns: 100px 135px;
+    gap: 0.5px;
+  }
+  .projects .fa-arrow-up-right-from-square{
+    font-size: 2.3rem;
+    top:56% ;
+    left: 102%;
+  }
+  .projects .tools li i{
+    margin-right: 0.3rem;
+  }
+}
+@media(min-width: 375px){
+  .container{
+    max-width: 375px;
+  }
+  .tools{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .projects .tools{
+    grid-template-columns: 135px 135px;
+    gap: 8px;
+  }
+  .projects .fa-arrow-up-right-from-square{
+    font-size: 2.5rem;
+    top:50% ;
+    left: 102%;
+  }
+  .projects .tools li i{
+    margin-right: 0.3rem;
+  }
+}
 @media(min-width: 625px){
   .container{
     max-width: 725px;
