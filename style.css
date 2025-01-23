@@ -249,6 +249,11 @@ footer p{
   .projects .tools{
     grid-template-columns: 100px 135px;
     gap: 0.5px;
+    text-align: center;
+  }
+  .projects .tools li{
+    font-size: 1rem;
+    
   }
  
   .projects .tools li i{
@@ -264,11 +269,15 @@ footer p{
     justify-content: center;
     gap: 10px;
   }
+  
   .projects .tools{
     grid-template-columns:1fr 1fr;
     gap: 4px;
   }
-
+  .projects .tools li{
+    font-size: 1.2rem;
+    
+  }
   .projects .tools li i{
     margin-right: 0.3rem;
   }
