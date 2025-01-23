@@ -270,12 +270,12 @@ footer p{
     max-width: 375px;
   }
   .tools{
-    grid-template-columns: 40% 50%;
+    grid-template-columns: 40% 60%;
     justify-content: center;
     gap: 10px;
   }
   .projects .tools{
-    grid-template-columns: 40% 50%;
+    grid-template-columns: 40% 60%;
     gap: 4px;
   }
   .projects .fa-arrow-up-right-from-square{
