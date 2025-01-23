@@ -264,7 +264,7 @@ footer p{
 }
 @media(min-width: 375px){
   .container{
-    max-width: 375px;
+    max-width: 390px;
   }
   .tools{
     grid-template-columns: 1fr 1fr;
