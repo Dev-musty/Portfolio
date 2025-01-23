@@ -1,0 +1,327 @@
+:root{
+  --text: #D9D9D9;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #212426;
+  color: var(--text);
+  font-family: "Red Hat Text", serif;
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+ @keyframes appear{
+  from {
+    opacity: 1;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+ }
+ .animate{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40% ;
+
+ }
+nav{
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-right: 1rem;
+}
+ul >a:first-child{
+  background-color: #E2F266;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px ;
+  margin-right: 2rem;
+}
+ul >a:nth-child(2){
+  margin-right: 2rem;
+}
+li{
+  list-style: none;
+}
+ul > a{
+  color: black;
+}
+.container{
+  max-width: 425px;
+  margin: auto;
+}
+.intro{
+  margin: 20rem auto 10rem;
+  width: 90%;
+}
+.intro  img{
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+}
+.social > a{
+  color: var(--text);
+  margin-right: 1rem;
+  
+}
+.about{
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 1.5;
+
+}
+h1{
+  font-size: 2.3rem;
+}
+.about span{
+  color: #E2F266;
+  font-size: 3rem;
+}
+.title{
+  font-size: 2rem;
+}
+.detail{
+  font-size: 1.6rem;
+}
+.tools{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  width: 80%;
+  margin:5rem auto 0;
+}
+.tools li{
+  background-color: #1C1C1C;
+  border: 1px solid white;
+  box-shadow: 0 0 1px #E2F266;
+  color: var(--text);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.tools li i{
+  margin-right: 1rem;
+}
+
+.projects{
+  margin: 3rem 0;
+}
+h2{
+  font-size: 3rem;
+  text-align: center;
+}
+.card{
+  width: 90%;
+  margin:3rem auto 2rem;
+  background-color: #E2F266;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #9CA653;
+}
+.card >img{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-body{
+  color: #212426;
+  padding: 1rem;
+}
+h3{
+  font-size: 2rem;
+}
+.projects a i{
+  font-size: 3rem;
+  margin: 1rem 1rem 1rem 0;
+  color: #212426;
+  cursor: pointer;
+}
+.projects p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.projects .tools{
+  position: relative;
+  display: grid;
+  grid-template-columns:140px 140px 15px;
+  align-items: center;
+  gap: 9px;
+  margin: 2rem 0 0;
+  width: 90%;
+}
+.projects .fa-arrow-up-right-from-square{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+}
+.contact{
+  width: 80%;
+  margin: 2rem auto;
+}
+.info{
+  background-color: #212426;
+  box-shadow: 0 0 40px #1C1C1C;
+  margin: 2rem 0;
+  padding: 2rem;
+  text-align: center;
+}
+.info p {
+  font-size: 2rem;
+}
+.info .social{
+  font-size: 2rem;
+}
+footer{
+  background-color: #E2F266;
+  text-align: center;
+  color: #212426;
+  padding: 3rem auto 0;
+}
+footer h4{
+  font-size: 2rem;
+  padding: 2rem 0 1.5rem;
+}
+footer > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+footer i{
+  font-size: 3rem;
+  color: #212426;
+}
+footer a:last-child{
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #212426;
+  color: var(--text);
+}
+footer a:hover{
+  box-shadow: 0 0 30px var(--text);
+}
+footer p{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media(min-width: 625px){
+  .container{
+    max-width: 725px;
+  }
+  .intro{
+    display: grid;
+    grid-template-areas: 
+    'box1 box2'
+    'box1 box3'
+    ;
+    gap: 3rem;
+    align-items: center;
+
+  }
+  .my-image{
+    grid-area: box1;
+  }
+  
+  .intro .social{
+    grid-area:box2;
+    justify-content: start;
+    margin: 0;
+  }
+  .about{
+    text-align: left;
+    grid-area:box3;
+    margin: 0;
+  }
+  .title{
+    font-size: 2.3rem;
+  }
+  .detail{
+    font-size: 2rem;
+  }
+  .tools{
+    gap: 4rem;
+  }
+  .tools li{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+  .JQuery svg{
+    width: 25px;
+    height: 25px;
+  }
+  .info{
+    padding: 4rem;
+  }
+  .info p{
+    font-size: 3rem;
+  }
+  .projects .tools{
+    grid-template-columns:240px 240px 15px;
+    align-items: start;
+    gap: 9px;
+    margin: 2rem 0 0;
+    width: 90%;
+  }
+  .projects a i{
+    font-size: 4rem;
+  }
+  .projects .fa-arrow-up-right-from-square{
+    position: absolute;
+    top: 65%;
+    left: 100%;
+  }
+  .info .social{
+    font-size: 4rem;
+  }
+  footer h4{
+    font-size: 4rem;
+  }
+  footer a:last-child{
+    padding: 0.4rem 1.3rem;
+    font-size: 2.8rem;
+  }
+  footer i{
+    font-size: 6rem;
+  }
+  footer p {
+    font-size: 2rem;
+  }
+}
